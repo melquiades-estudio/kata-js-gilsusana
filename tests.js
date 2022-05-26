@@ -106,15 +106,12 @@ describe("Variables en JS", () => {
 
     it("Completa todas las variables que faltan para que las operaciones resulten correctamente", () => {
 
-        let a = 11;
         expect(a + b).to.equal(11.34);
-        let b = 0.34;
         expect(a * c).to.equal(110);
-        let c = 10;
         expect(d - e).to.equal(-340);
-        
+       
         // investiga para qué sirven los operadores ** y %
-        expect(f ** g).to.equal(1000);
+        expect(f ** g).to.equal(27);
         expect(x % 2).to.equal(0);
         expect(y % 2).to.equal(1);
     })
@@ -122,6 +119,10 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que se cumplan las condiciones", () => {
 
         let a = 10;
+        let b = 100;
+        let c = undefined;
+        let d = "d";
+        let n = "B"
 
         expect(a > 9).to.be.true;
         expect(a < 11).to.be.true;
@@ -145,7 +146,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "KO").to.be.true;
     })
 
     it("comparando cadenas (strings)", () => {
@@ -161,7 +162,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "pikachu").to.be.true;
     })
 
     it("Interpolación de cadenas (strings) (1)", () => {
@@ -178,7 +179,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Pizza con Pepperoni").to.be.true;
     })
 
     it("Interpolación de cadenas (strings) (2)", () => {
